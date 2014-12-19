@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="company.xsl"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="company.xsd">
+<!--Department-->
+	<Department>
+		<deptId>ADM</deptId>
+		<deptName>Admin</deptName>
+		<deptAddr>LA</deptAddr>
+	</Department>
+	
+	<Department>
+		<deptId>FIN</deptId>
+		<deptName>Finance</deptName>
+		<deptAddr>LA</deptAddr>
+	</Department>
+	
+	<Department>
+		<deptId>SER</deptId>
+		<deptName>Services</deptName>
+		<deptAddr>LA</deptAddr>
+	</Department>
+	
+	<Department>
+		<deptId>OPR</deptId>
+		<deptName>Operations</deptName>
+		<deptAddr>LA</deptAddr>
+	</Department>
+	
+	<Department>
+		<deptId>BUS</deptId>
+		<deptName>Business</deptName>
+		<deptAddr>LA</deptAddr>
+	</Department>
+	
+<!--Employee-->
+	<Employee empId="1">
+		<empName>PSmith</empName>
+		<empPhone>243-235-3253</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="2">
+		<empName>Wong</empName>
+		<empPhone>224-234-9065</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="3">
+		<empName>Jack</empName>
+		<empPhone>243-235-4566</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="4">
+		<empName>Anne</empName>
+		<empPhone>324-876-3768</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="5">
+		<empName>Ben</empName>
+		<empPhone>453-249-3275</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="6">
+		<empName>Monica</empName>
+		<empPhone>935-487-3859</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="7">
+		<empName>Jennifer</empName>
+		<empPhone>935-487-3869</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+	<Employee empId="8">
+		<empName>Mary</empName>
+		<empPhone>932-487-3859</empPhone>
+		<empOffice>LA</empOffice>
+	</Employee>
+	
+<!--Division-->
+	<Division divId="div1">
+		<divName>HR</divName>
+		<divPhone>346-232-3242</divPhone>
+		<housedDeptId>ADM</housedDeptId>
+		<managerEmpId>4</managerEmpId>
+	</Division>
+	
+	<Division divId="div2">
+		<divName>Recruitment</divName>
+		<divPhone>346-232-3243</divPhone>
+		<housedDeptId>ADM</housedDeptId>
+		<managerEmpId>1</managerEmpId>
+	</Division>
+	
+	<Division divId="div3">
+		<divName>SysAd</divName>
+		<divPhone>346-232-3244</divPhone>
+		<housedDeptId>ADM</housedDeptId>
+		<managerEmpId>3</managerEmpId>
+	</Division>
+	
+	<Division divId="div4">
+		<divName>Payroll</divName>
+		<divPhone>346-232-3245</divPhone>
+		<housedDeptId>FIN</housedDeptId>
+		<managerEmpId>5</managerEmpId>
+	</Division>
+	
+	<Division divId="div5">
+		<divName>Accounting</divName>
+		<divPhone>346-232-3246</divPhone>
+		<housedDeptId>FIN</housedDeptId>
+		<managerEmpId>5</managerEmpId>
+	</Division>
+	
+	<Division divId="div6">
+		<divName>Networking</divName>
+		<divPhone>346-232-3247</divPhone>
+		<housedDeptId>SER</housedDeptId>
+		<managerEmpId>2</managerEmpId>
+	</Division>
+	
+	<Division divId="div7">
+		<divName>SaaS</divName>
+		<divPhone>346-232-3248</divPhone>
+		<housedDeptId>SER</housedDeptId>
+		<managerEmpId>2</managerEmpId>
+	</Division>
+	
+	<Division divId="div8">
+		<divName>Security</divName>
+		<divPhone>346-232-3249</divPhone>
+		<housedDeptId>SER</housedDeptId>
+		<managerEmpId>1</managerEmpId>
+	</Division>
+	
+	<Division divId="div9">
+		<divName>Convergence</divName>
+		<divPhone>346-232-3250</divPhone>
+		<housedDeptId>SER</housedDeptId>
+		<managerEmpId>1</managerEmpId>
+	</Division>
+	
+	<Division divId="div10">
+		<divName>Sales</divName>
+		<divPhone>346-232-3251</divPhone>
+		<housedDeptId>OPR</housedDeptId>
+		<managerEmpId>1</managerEmpId>
+	</Division>
+	
+	<Division divId="div11">
+		<divName>Marketing</divName>
+		<divPhone>346-232-3252</divPhone>
+		<housedDeptId>OPR</housedDeptId>
+		<managerEmpId>4</managerEmpId>
+	</Division>
+	
+	<Division divId="div12">
+		<divName>Engineering</divName>
+		<divPhone>346-232-3253</divPhone>
+		<housedDeptId>OPR</housedDeptId>
+		<managerEmpId>4</managerEmpId>
+	</Division>
+	
+	<Division divId="div13">
+		<divName>Business development</divName>
+		<divPhone>346-232-3254</divPhone>
+		<housedDeptId>BUS</housedDeptId>
+		<managerEmpId>1</managerEmpId>
+	</Division>
+	
+	<Division divId="div14">
+		<divName>Business Analysis</divName>
+		<divPhone>346-232-3255</divPhone>
+		<housedDeptId>BUS</housedDeptId>
+		<managerEmpId>1</managerEmpId>
+	</Division>
+	
+<!--WorksFor-->
+	<WorksFor>
+		<divId>div1</divId>
+		<empId>4</empId>
+		<percentTime>60</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>4</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>4</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div13</divId>
+		<empId>4</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div14</divId>
+		<empId>4</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>5</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>5</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div4</divId>
+		<empId>5</empId>
+		<percentTime>50</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div5</divId>
+		<empId>5</empId>
+		<percentTime>30</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>3</empId>
+		<percentTime>20</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>3</empId>
+		<percentTime>20</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div8</divId>
+		<empId>3</empId>
+		<percentTime>60</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>6</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>6</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div6</divId>
+		<empId>6</empId>
+		<percentTime>60</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div7</divId>
+		<empId>6</empId>
+		<percentTime>20</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>1</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>1</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div6</divId>
+		<empId>1</empId>
+		<percentTime>15</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div8</divId>
+		<empId>1</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div10</divId>
+		<empId>1</empId>
+		<percentTime>60</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div13</divId>
+		<empId>1</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div9</divId>
+		<empId>1</empId>
+		<percentTime>3</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div14</divId>
+		<empId>1</empId>
+		<percentTime>2</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>2</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>2</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div6</divId>
+		<empId>2</empId>
+		<percentTime>30</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div7</divId>
+		<empId>2</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div1</divId>
+		<empId>2</empId>
+		<percentTime>10</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div8</divId>
+		<empId>2</empId>
+		<percentTime>15</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div4</divId>
+		<empId>2</empId>
+		<percentTime>15</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div7</divId>
+		<empId>7</empId>
+		<percentTime>90</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>7</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>7</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div11</divId>
+		<empId>8</empId>
+		<percentTime>90</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div2</divId>
+		<empId>8</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+	
+	<WorksFor>
+		<divId>div3</divId>
+		<empId>8</empId>
+		<percentTime>5</percentTime>
+	</WorksFor>
+
+</Company>
+

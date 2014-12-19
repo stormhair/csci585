@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<!--simple element type definition-->
+	<xs:element name="deptName" type="xs:string"/>
+	<xs:element name="deptAddr" type="xs:string"/>
+	<xs:element name="empName" type="xs:string"/>
+	<xs:element name="empOffice" type="xs:string"/>
+	<xs:element name="divName" type="xs:string"/>
+	<xs:element name="housedDeptId" type="xs:string"/>
+	<xs:element name="managerEmpId" type="xs:string"/>
+	<xs:element name="divId" type="xs:string"/>
+	<xs:element name="empId" type="xs:string"/>
+	<xs:element name="percentTime" type="xs:decimal"/>
+	
+	<xs:element name="deptId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Z][A-Z][A-Z]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="empPhone">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[1-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="divPhone">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[1-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<!--attribute definition-->
+	<xs:attribute name="empId" type="xs:integer"/>
+	<xs:attribute name="divId" type="xs:string"/>
+
+	<!--complex element type definition-->
+	<xs:element name="Department">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="deptId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="deptName" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="deptAddr" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Employee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="empName" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="empPhone" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="empOffice" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+			<xs:attribute ref="empId" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Division">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="divName" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="divPhone" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="housedDeptId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="managerEmpId" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+			<xs:attribute ref="divId" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="WorksFor">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="divId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="empId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="percentTime" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Company">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Department" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Employee" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Division" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="WorksFor" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
