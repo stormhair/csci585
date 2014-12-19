@@ -1,0 +1,19 @@
+1. Show that the geometry type of the polygon is POLYGON
+SELECT GeometryType(PolygonFromText('POLYGON((0 0,0 3,3 0,0 0))'));
+http://sqlfiddle.com/#!2/ef114/4/0
+
+2. Use Within() to show that the point is inside the polygon.
+SELECT Within(GeomFromText('POINT(1 1)'), PolygonFromText('POLYGON((0 0,0 3,3 0,0 0))'));
+http://sqlfiddle.com/#!2/ef114/5/0
+
+3. Use Contains() to also show that the point is inside the polygon
+SELECT Contains(PolygonFromText('POLYGON((0 0,0 3,3 0,0 0))'), GeomFromText('POINT(1 1)'));
+http://www.sqlfiddle.com/#!2/ef114/6
+
+4. Find the bounding box of the given polygon.
+SELECT AsText(Envelope(PolygonFromText('POLYGON((0 0,0 3,3 0,0 0))')));
+http://sqlfiddle.com/#!2/ef114/7/0
+
+5. Find the centroid of the given polygon.
+SELECT AsText(Centroid(PolygonFromText('POLYGON((0 0,0 3,3 0,0 0))')));
+http://sqlfiddle.com/#!2/ef114/8/0
